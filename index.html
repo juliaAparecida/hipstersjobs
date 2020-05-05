@@ -7,71 +7,85 @@
     <link href="img/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
+    
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho__logo" src="../hipstersjobs/img/hipsters-jobs-logo.png" alt="logo do hipsters-jobs">
-        <nav>
-            <ul class="cabecalho__lista">
-                <li class="cabecalho__item-menu"><a href="#">Vagas</a></li>
-                <li class="cabecalho__item-menu"><a href="#">Empresas</a></li>
-                <li class="cabecalho__item-menu cabecalho__item__matricular"><a href="#">Entrar</a></li>
-                <li class="cabecalho__item-menu cabecalho__item__matricular --cadastro"><a href="#">Cadastrar</a></li>
-            </ul>
-        </nav>
-        <button class="cabecalho__menu"></button>
-    </header>
-
-    <main>Conteudo principal</main>
-    <footer class="footer__container">
-        <div>
-           <ul class="footer__list">
-              <li>
-                 <a href="#">Home</a>
-              </li>
-              <li>
-                 <a href="#">Contato</a>
-              </li>
-              <li>
-                 <a href="#">Sobre nós</a>
-              </li>
-              <li>
-                 <a href="#">Termos de uso</a>
-              </li>
-           </ul>
-        </div>
-        <div>
-           <p class="footer__text">Empresas</p>
-           <ul class="footer__list">
-              <li>
-                 <a href="#">Publicar vaga</a>
-              </li>
-              <li>
-                 <a href="#">Entrar</a>
-              </li>
-           </ul>
-        </div>
-        <div>
-           <p class="footer__text">Candidatos</p>
-           <ul class="footer__list">
-              <li>
-                 <a href="#">Buscar vagas</a>
-              </li>
-           </ul>
-        </div>
-        <div>
-           <p class="footer__text"><span class="footer--line">Procurando</span> 
-              estágio/estagiários?
-           </p>
-           <ul class="footer__list">
-              <li>
-                 <a href="#">Conheça Alura + Walljobs</a>
-              </li>
-           </ul>
-        </div>
-     </footer>
-
-</body>
-</html>
+   <header class="cabecalho container">
+      <img class="cabecalho__logo" src="../hipstersjobs/img/hipsters-jobs-logo.png" alt="logo do hipsters-jobs">
+      <nav>
+         <ul class="cabecalho__lista">
+            <li class="cabecalho__item-menu"><a href="#">Vagas</a></li>
+            <li class="cabecalho__item-menu"><a href="#">Empresas</a></li>
+            <li class="cabecalho__item-menu cabecalho__item__matricular"><a href="#">Entrar</a></li>
+            <li class="cabecalho__item-menu cabecalho__item__matricular --cadastro"><a href="#">Cadastrar</a></li>
+         </ul>
+      </nav>
+      <button class="cabecalho__menu"></button>
+   </header>
+   <main class="">
+      <section class="home">
+         <p>Quer impulsionar sua careira?</p>
+         <a href="#">Conheça os cursos online da Alura</a>
+      </section>
+      <section>
+         <p class="home__opportunity">Temos 268 vagas em aberto</p>
+      </section>
+      <form class="home__form">
+         <input type="text" id="" name="" class="home__name" placeholder="Palavras-chave">  
+         <input type="text" id="" name="" class="home__name" placeholder="Local">
+         <button type="submit" class="home__button">Buscar vagas</button>
+      </form>
+   </main>
+   <footer class=" container footer__container">
+      <div>
+         <ul class="footer__list">
+            <li>
+               <a href="#">Home</a>
+            </li>
+            <li>
+               <a href="#">Contato</a>
+            </li>
+            <li>
+               <a href="#">Sobre nós</a>
+            </li>
+            <li>
+               <a href="#">Termos de uso</a>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <p class="footer__text">Empresas</p>
+         <ul class="footer__list">
+            <li>
+               <a href="#">Publicar vaga</a>
+            </li>
+            <li>
+               <a href="#">Entrar</a>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <p class="footer__text">Candidatos</p>
+         <ul class="footer__list">
+            <li>
+               <a href="#">Buscar vagas</a>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <p class="footer__text"><span class="footer--line">Procurando</span> 
+            estágio/estagiários?
+         </p>
+         <ul class="footer__list">
+            <li>
+               <a href="#">Conheça Alura + Walljobs</a>
+            </li>
+         </ul>
+      </div>
+   </footer>
+   </body>
+   </html>
