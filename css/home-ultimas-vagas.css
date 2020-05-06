@@ -1,0 +1,65 @@
+.home__color {
+    background-color: white;
+}
+
+.home__card {
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+.home__card__title {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #419dd4;
+    margin-bottom: .8rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.home__date {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #adadad;
+}
+
+.home__nivel {
+    border: 2px solid #419dd4;
+    border-radius: 44px;
+    color: #419dd4;
+    height: 1.7rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.home__vaga p{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.home__detalhes {
+    font-size: 1rem;
+    color: #adadad;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.home__button__vagas {
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    color: #2d3e50;
+    font-weight: 600;
+}
