@@ -1,91 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hipsters</title>
-    <link href="img/favicon.ico" rel="icon">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/footer.css">
-    
-</head>
-<body>
-   <header class="cabecalho container">
-      <img class="cabecalho__logo" src="../hipstersjobs/img/hipsters-jobs-logo.png" alt="logo do hipsters-jobs">
-      <nav>
-         <ul class="cabecalho__lista">
-            <li class="cabecalho__item-menu"><a href="#">Vagas</a></li>
-            <li class="cabecalho__item-menu"><a href="#">Empresas</a></li>
-            <li class="cabecalho__item-menu cabecalho__item__matricular"><a href="#">Entrar</a></li>
-            <li class="cabecalho__item-menu cabecalho__item__matricular --cadastro"><a href="#">Cadastrar</a></li>
-         </ul>
-      </nav>
-      <button class="cabecalho__menu"></button>
-   </header>
-   <main class="">
-      <section class="home">
-         <p>Quer impulsionar sua careira?</p>
-         <a href="#">Conheça os cursos online da Alura</a>
-      </section>
-      <section>
-         <p class="home__opportunity">Temos 268 vagas em aberto</p>
-      </section>
-      <form class="home__form">
-         <input type="text" id="" name="" class="home__name" placeholder="Palavras-chave">  
-         <input type="text" id="" name="" class="home__name" placeholder="Local">
-         <button type="submit" class="home__button">Buscar vagas</button>
-      </form>
-   </main>
-   <footer class=" container footer__container">
-      <div>
-         <ul class="footer__list">
-            <li>
-               <a href="#">Home</a>
-            </li>
-            <li>
-               <a href="#">Contato</a>
-            </li>
-            <li>
-               <a href="#">Sobre nós</a>
-            </li>
-            <li>
-               <a href="#">Termos de uso</a>
-            </li>
-         </ul>
-      </div>
-      <div>
-         <p class="footer__text">Empresas</p>
-         <ul class="footer__list">
-            <li>
-               <a href="#">Publicar vaga</a>
-            </li>
-            <li>
-               <a href="#">Entrar</a>
-            </li>
-         </ul>
-      </div>
-      <div>
-         <p class="footer__text">Candidatos</p>
-         <ul class="footer__list">
-            <li>
-               <a href="#">Buscar vagas</a>
-            </li>
-         </ul>
-      </div>
-      <div>
-         <p class="footer__text"><span class="footer--line">Procurando</span> 
-            estágio/estagiários?
-         </p>
-         <ul class="footer__list">
-            <li>
-               <a href="#">Conheça Alura + Walljobs</a>
-            </li>
-         </ul>
-      </div>
-   </footer>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hipsters</title>
+      <link href="img/favicon.ico" rel="icon">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/home-destaque.css">
+      <link rel="stylesheet" href="css/home-empresas.css">
+      <link rel="stylesheet" href="css/home-ultimas-vagas.css">
+      <link rel="stylesheet" href="css/home__classificacao.css">
+      <link rel="stylesheet" href="css/alerta-vagas.css">
+      <link rel="stylesheet" href="css/footer.css">
+   </head>
+   <body>
+      <header class="cabecalho container">
+         <img class="cabecalho__logo" src="../hipstersjobs/img/hipsters-jobs-logo.png" alt="logo do hipsters-jobs">
+         <nav>
+            <ul class="cabecalho__lista">
+               <li class="cabecalho__item-menu"><a href="#">Vagas</a></li>
+               <li class="cabecalho__item-menu"><a href="#">Empresas</a></li>
+               <li class="cabecalho__item-menu cabecalho__item__matricular"><a href="#">Entrar</a></li>
+               <li class="cabecalho__item-menu cabecalho__item__matricular --cadastro"><a href="#">Cadastrar</a></li>
+            </ul>
+         </nav>
+         <button class="cabecalho__menu"></button>
+      </header>
+      <main class="">
+         <section class="home">
+            <p>Quer impulsionar sua careira?</p>
+            <a href="#">Conheça os cursos online da Alura</a>
+         </section>
+         <section>
+            <p class="home__opportunity">Temos 268 vagas em aberto</p>
+         </section>
+         <form class="home__form">
+            <input type="text" id="" name="" class="home__name" placeholder="Palavras-chave">  
+            <input type="text" id="" name="" class="home__name" placeholder="Local">
+            <button type="submit" class="home__button">Buscar vagas</button>
+         </form>
+         <h2 class="home__title">empresas em destaque</h2>
+         <section class="home__company">
+            <img class="home__company-logo" src="img/alura.png" alt="logo da Alura">
+            <div class="home__painel">
+               <p class="home__banner__company">Alura</p>
+               <p class="home__banner__company">10 vaga(s)</p>
+            </div>
+         </section>
+         <section class="home__banner">
+            <h2 class="home__subtitle">publique as vagas da sua empresa</h2>
+            <p class="home__text">Os profissionais poderão se candidatar imediatamente</p>
+            <button class="home__button--publication">Publicar vaga</button>
+         </section>
+         <section class="home__color">
+            <h2 class="home__title">ultimas vagas publicadas</h2>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <article class="home__card">
+               <div class="flex">
+                  <h3 class="home__card__title">Gerente de Projetos - Florianópolis/SC</h3>
+                  <small class="home__date">04/05/2020</small>
+               </div>
+               <div class="flex">
+                  <div>
+                     <p class="home__vaga"> HrSoul Hunting Relationship</p>
+                     <p class="home__vaga">Florianópolis, State of Santa Catarina, Brazil</p>
+                  </div>
+                  <div class="home__nivel">
+                     <p>Pj</p>
+                  </div>
+               </div>
+               <p class="home__detalhes">Sólida experiência em arquitetura e engenharia de sistemas; Experiência em</p>
+            </article>
+            <button class="home__button__vagas">Visualizar todas as vagas</button>
+         </section>
+         <section class="home__classificacao">
+            <ul class="home__classificacao-list">
+               <li>
+                  <a href="#">
+                     Programação/Arquitetura
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Banco de Dados
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Redes/Infraestrutura
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Design/UX
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Testes
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Inivação de Gestão
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Requisitos
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Marketing Digital
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Segurança
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     Treinamentos Instrutorias
+                     <spam class="home__classificacao-number">(111)</spam>
+                  </a>
+               </li>
+            </ul>
+         </section>
+         <section class="container__opportunity">
+            <h2 class="home__alert">Receba alerta de vagas</h2>
+            <p class="home__box-opportunity">Receba alerta de vagas diretamente do seu email.</p>
+            <p class="home__alert-page">Você poderá descadastrar-se a qualquer momento</p>
+         </section>
+         <form class="home__form-alert">
+            <input type="text" id="" name="" class="home__name-alert" placeholder="Palavras-chave">  
+            <input type="text" id="" name="" class="home__name-alert" placeholder="Local">
+            <button type="submit" class="home__button-alert">criar alerta</button>
+         </form>
+      </main>
+      <footer class=" container footer__container">
+         <div>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Home</a>
+               </li>
+               <li>
+                  <a href="#">Contato</a>
+               </li>
+               <li>
+                  <a href="#">Sobre nós</a>
+               </li>
+               <li>
+                  <a href="#">Termos de uso</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text">Empresas</p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Publicar vaga</a>
+               </li>
+               <li>
+                  <a href="#">Entrar</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text">Candidatos</p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Buscar vagas</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text"><span class="footer--line">Procurando</span> 
+               estágio/estagiários?
+            </p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Conheça Alura + Walljobs</a>
+               </li>
+            </ul>
+         </div>
+      </footer>
    </body>
-   </html>
+</html>

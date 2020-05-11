@@ -1,0 +1,19 @@
+.home__classificacao {
+    background-color: #65c9e4;
+    padding: 1rem 2rem 3rem;
+}
+
+.home__classificacao-list a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.home__classificacao-number {
+    font-size: 1.3rem;
+    color: #FFE15E;
+    margin-left: .5rem;
+    font-weight: 600;
+}
