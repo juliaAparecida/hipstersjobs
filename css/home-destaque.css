@@ -45,3 +45,45 @@
     border-radius: 5px;
 }
 
+@media(min-width:768px) {
+    .home {
+        display: flex;
+        align-self: center;
+        padding: .8rem 0;
+    }
+
+    .home__form {
+        flex-direction: row;
+       justify-content: space-evenly;
+}
+    .home__name {
+        padding: .5rem 1rem;
+    }
+
+    .home__button {
+        height: 2rem;
+        padding: .5rem .8rem;
+    }
+
+    .home__title {
+        margin: 0 1rem 4rem 1rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .home__form {
+        padding: 2rem 0;
+    }
+
+    .home__button {
+        padding: 1.2rem 1.8rem;
+        line-height: 0;
+    }
+
+    .home__name {
+        height: 1.9rem;
+        padding: .4rem 5rem;
+    }
+
+
+}
