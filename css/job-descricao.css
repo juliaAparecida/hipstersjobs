@@ -1,0 +1,22 @@
+.job__description {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.job__requirement {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.job__container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:768px) {
+    .job__container{
+        flex-direction: row;
+    }
+}
