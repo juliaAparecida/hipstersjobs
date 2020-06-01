@@ -83,10 +83,12 @@
     .home__company-flex {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 }
 
     .home__company {
         padding: 1rem 3rem;
+        width: 13rem;
     }
 
     .home__button--publication {

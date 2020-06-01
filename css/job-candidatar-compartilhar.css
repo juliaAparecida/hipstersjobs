@@ -20,36 +20,54 @@
     margin-bottom: 2rem;
 }
 
-.job__social-media {
-    display: flex;
-    justify-content: space-between;
-}
-
-.--facebook {
-    background-image: url(../img/facebook.svg);
-    background-repeat: no-repeat;
-}
-
-.--twitter {
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-}
-
-.--likedin {
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-}
-
-.--pinterest {
-    background-image: url(../img/pinterest.svg);
-    background-repeat: no-repeat;
-}
-
 .job__share {
     align-self: center;
     color: rgba(0, 0, 0, 0.6);
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
+
+.job__social-media {
+    display: flex;
+    align-self: center;
+}
+
+.job__social-media li {
+    display: flex;
+    height: 1.5rem;
+    width: 2.5rem;
+}
+
+.job__media {
+    margin-left: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-position: center;
+    align-self: center;
+}
+
+.--facebook {
+    background-image: url(../img/facebook.svg);
+    background-color:  #4267B2;
+}
+
+.--twitter {
+    background-image: url(../img/twitter.svg);
+    background-color: #55acee;
+}
+
+.--likedin {
+    background-image: url(../img/twitter.svg);
+    background-color: #0077b5
+}
+
+.--pinterest {
+    background-image: url(../img/pinterest.svg);
+    background-color: #CB2027;
+}
+
 
 @media(min-width:768px) {
     .job__register {
@@ -57,7 +75,8 @@
         justify-content: space-around;
     }
 
-    .job__share {
-        margin-bottom: 2rem;
+    .job__share,
+    .job__register__button {
+        margin-bottom: 0;
     }
 }
