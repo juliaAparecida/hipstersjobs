@@ -76,3 +76,35 @@
     border-radius: 4px;
     margin: 3rem 3rem 0 4rem;
 }
+
+
+@media(min-width:768px) {
+
+    .home__company-flex {
+        display: flex;
+        justify-content: space-evenly;
+}
+
+    .home__company {
+        padding: 1rem 3rem;
+    }
+
+    .home__button--publication {
+        align-self: center;
+        margin-top: 2rem;
+        width: 16rem;
+    }
+
+    .home__card {
+        width: 42rem;
+        margin: 1rem 0;
+        height: 8rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .home__card {
+        width: 48rem;
+        height: 10rem;
+    }
+}

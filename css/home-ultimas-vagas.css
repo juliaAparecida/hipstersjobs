@@ -10,7 +10,10 @@
     border-radius: 5px;
     margin: 1rem;
     padding: 1rem;
+    display: flex;
+    height: 10rem;
 }
+
 
 
 .home__card__title {
@@ -22,6 +25,10 @@
 
 .flex {
     display: flex;
+}
+
+.--form {
+    flex-direction: column;
 }
 
 .home__date {
@@ -41,20 +48,44 @@
     justify-content: center;
 }
 
-.home__vaga p{
-    font-size: 3rem;
+.home__vacancy {
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.home__detalhes {
+.--icon::before {
+    content: "";
+    background-image: url(../img/icon-company.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 22px;
+    display: inline-block;
+    background-position-y: bottom;
+}
+
+.--location::before {
+    content: "";
+    background-image: url(../img/icon-marker.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 22px;
+    display: inline-block;
+    background-position-y: bottom;
+    margin-right: .2rem;
+
+}
+
+.home__details {
     font-size: 1rem;
     color: #adadad;
     line-height: 1.5;
     margin-top: 1rem;
 }
 
-.home__button__vagas {
+.home__button__vacancy {
     border: 1px solid #adadad;
     border-radius: 5px;
     padding: 1rem;
@@ -62,4 +93,34 @@
     margin-bottom: 5rem;
     color: #2d3e50;
     font-weight: 600;
+}
+
+@media(min-width:768px) {
+    .--form {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .home__image {
+        width: 10rem;
+        align-self: center;
+    }
+
+    .home__image img {
+        width: 100%;
+    }
+
+    .home__vacancy {
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    .--spacing {
+        justify-content: space-between;
+    }
+
+    .home__date, 
+    .home__card__title {
+        margin-top: 1rem;
+    }
 }
