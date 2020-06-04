@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hipsters</title>
+      <link href="img/favicon.ico" rel="icon">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/home-destaque.css">
+      <link rel="stylesheet" href="css/job.css">
+      <link rel="stylesheet" href="css/home-ultimas-vagas.css">
+      <link rel="stylesheet" href="css/job-descricao.css">
+      <link rel="stylesheet" href="css/job-alerta-vagas.css">
+      <link rel="stylesheet" href="css/job-empresa.css">
+      <link rel="stylesheet" href="css/job-candidatar-compartilhar.css">
+      <link rel="stylesheet" href="css/footer.css">
+   </head>
+   <body>
+      <header class="cabecalho container">
+         <img class="cabecalho__logo" src="../hipstersjobs/img/hipsters-jobs-logo.png" alt="logo do hipsters-jobs">
+         <nav>
+            <ul class="cabecalho__lista">
+               <li class="cabecalho__item-menu"><a href="#">Vagas</a></li>
+               <li class="cabecalho__item-menu"><a href="#">Empresas</a></li>
+               <li class="cabecalho__item-menu cabecalho__item__matricular"><a href="#">Entrar</a></li>
+               <li class="cabecalho__item-menu cabecalho__item__matricular --cadastro"><a href="#">Cadastrar</a></li>
+            </ul>
+         </nav>
+         <button class="cabecalho__menu"></button>
+      </header>
+      <main>
+         <section class="home">
+            <p>Quer impulsionar sua careira?</p>
+            <a href="#">Conheça os cursos online da Alura</a>
+         </section>
+         <section class="job">
+            <button class="job__button">Voltar</button>
+            <h2 class="job__title">Desenvolvedor Java</h2>
+            <div class="flex">
+               <small class="job__details --icon">PSM Company</small>
+               <small class="job__details --spacing --location">São Paulo, Brazil</small>
+            </div>
+            <small class="job__details">13/05/2020</small>
+            <div class="flex">
+               <small class="job__responsibility">CLT Flex</small>
+               <small class="job__responsibility --spacing">Programação/Arquitetura</small>
+            </div>
+         </section>
+         <div class="job__container">
+            <div>
+               <section class="container">
+                  <article>
+                     <h2 class="job__description">Descrição de vaga</h2>
+                     <p class="job__requirement">Java</p>
+                     <p class="job__requirement">Struts</p>
+                     <p class="job__requirement">Servlet</p>
+                     <p class="job__requirement">SQL</p>
+                     <p class="job__requirement">Hibernate</p>
+                     <p class="job__requirement">Tomcat</p>
+                     <p class="job__requirement">Angular</p>
+                  </article>
+                  <article>
+                     <h2 class="job__description">Salário</h2>
+                     <p class="job__requirement">9k</p>
+                  </article>
+               </section>
+               <div class="container">
+                  <form class="job__form">
+                     <label class="job__form-email">Receber email para vagas desse tipo</label>
+                     <input class="job__email" type="text" id="" name="" placeholder="Seu email">
+                     <button class="job__button__form" type="submit">criar alerta</button>
+                  </form>
+               </div>
+            </div>
+            <div>
+               <section class="container">
+                  <article class="job__empresa">
+                     <img src="">
+                     <h3 class="job__title__card">Sobre a Improving</h3>
+                     <p class="job__text">Ajudamos a sua empresa em todas as áreas de TI!</p>
+                     <button class="job__button-card">Perfil da Empresa</button>
+                  </article>
+               </section>
+            </div>
+         </div>
+         </section>
+      </main>
+      <section class="job__register">
+      <button class="job__register__button">Cadastre-se agora</button>
+      <p class="job__share">Compartilhar vaga</p>
+      <ul>
+         <li class="job__socia-media">
+            <a class=" --facebook" href="#"></a>
+            <a class=" --twitter" href="#"></a>
+            <a class=" --likedin" href="#"></a>
+            <a class=" --pinterest" href="#"></a>
+         </li>
+      </ul>
+      </section>
+      <footer class=" container footer__container">
+         <div>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Home</a>
+               </li>
+               <li>
+                  <a href="#">Contato</a>
+               </li>
+               <li>
+                  <a href="#">Sobre nós</a>
+               </li>
+               <li>
+                  <a href="#">Termos de uso</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text">Empresas</p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Publicar vaga</a>
+               </li>
+               <li>
+                  <a href="#">Entrar</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text">Candidatos</p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Buscar vagas</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <p class="footer__text"><span class="footer--line">Procurando</span> 
+               estágio/estagiários?
+            </p>
+            <ul class="footer__list">
+               <li>
+                  <a href="#">Conheça Alura + Walljobs</a>
+               </li>
+            </ul>
+         </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,64 @@
+.job__empresa {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    height: 14rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 3.5rem;
+}
+
+.job__text {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.job__title__card {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #3e3e3e;;
+}
+
+.job__title__card::before {
+    content: "";
+    height: 62px;
+    width: 136px;
+    background-image: url(../img/Cognizant_Logo_Brand_Blue_300_CMYK®.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    background-position-x: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.job__button-card {
+margin-top: 3rem;
+border: 1px solid;
+border-radius: 6px;
+padding: 0.5rem 2rem;
+background-color: white;
+border: 1px solid #b8b8b8;
+}
+
+@media(min-width:768px) {
+    .job__empresa {
+        transform: translateY(-5rem);
+        margin-left: 5rem;
+    }
+}
+
+@media(min-width:1024px) {
+    .job__empresa {
+        margin-left: 20rem;
+    }
+}
+
+@media(min-width:1440px) {
+    .job__empresa {
+        margin-left: 44rem;
+    }
+}
