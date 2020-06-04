@@ -1,0 +1,22 @@
+.company__featured {
+    width: 100%;
+}
+
+.company__title {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.company__button {
+    margin: 0 auto;
+    border: 1px solid #b8b8b8;
+    color: #000;
+    border-radius: 6px;
+    background: none;
+    padding: .3rem 1rem;
+    display: block;
+}
+
